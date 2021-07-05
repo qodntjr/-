@@ -1,0 +1,31 @@
+https://drive.google.com/drive/folders/1CHp9jXW8gxpDRrtoADVJdY9mCeVYmf3H?usp=sharing
+빅데이터 
+3v 
+volume 양
+v실시간	스트림데이타
+variety다양성
+	정형 관계형->RDB사용
+	반정형 XML->HTML
+	비정형 ex)text,혼합(이미지,동영상,txt)
+
+소스		수집 		저장 						처리 			분석 시각화
+RDB		sqoop		Hadoop(hdfs분산파일시스템,mapreduce병렬처리)	mapreduce,pig,hive	R,python
+WEB,SNS 	크롤러
+sensor,Log 	
+공공데이터	다운로딩,openapi
+
+NoSQL - 컬럼,도큐먼트,키값,그래프
+
+컴파일 - 전체프로그램 -> 기계어 ->라이브러리 -> ...(자바)
+인터프리드 - 한줄씩 (파이썬)
+
+ai -> 지도학습
+머신러닝 -> 비지도학습
+딥러닝 -> 1.시계열2.분류,군력3.회귀분석4.상하관계분석
+
+----파이썬----
+자료형(input("")) 원하는 자료형으로 바꿔줘야한다.
+import turtle
+t = turtle.Pen() or t = turtle.Turtle()
+if,else ,while, 리스트
+대문자 변수는 상수
