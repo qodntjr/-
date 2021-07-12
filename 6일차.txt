@@ -1,0 +1,9 @@
+ai허브
+CSV파일에서 데이터 읽어오기
+import csv
+f = open('seoul.csv')
+data = csv.reader(f)
+header = next(data)
+
+기본 그래프 그리기
+matplotlib
