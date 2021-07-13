@@ -1,0 +1,11 @@
+히스토그램
+
+상자그림
+최댓값,최솟값,3/4,2/4,1/4 값을 표현할 수 있는 상자 그림
+
+다양한 그래프로 포현하기
+seaborn
+plotnine
+folium
+plotly
+pyecharts
