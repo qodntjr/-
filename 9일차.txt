@@ -1,0 +1,39 @@
+-대중교통 데이터 시각화하기
+지하철 유무임별 이용현황 데이터 정제하기
+유임 승차 비율이 가장 높은 역 찾기
+유무임 승하차 인원이 가장 많은 역 찾기
+모든 역의 유무임 승하차 비율
+-지하철 시간대별 데이터 시각화하기
+지하철 시간대별 이용 현황 데이터 정제하기
+출근 시간대 사람들이 가장 많이 타고 내리는 역 찾기
+특정 시간대 가장 많이 타고 내리는 역 찾기
+
+개별 : 버스 정류장 별 승하차 가 많은/적은 정류장 찾기
+
+import csv
+f = open('busstop.csv')
+data = csv.reader(f)
+next(data)
+a = '11110897'
+mx = 0
+mn = 9999999
+mx_name =''
+mn_name =''
+for row in data:
+    row[6:] = map(int, row[6:])
+    if a != row[1]:
+        print(mx_name)
+        print(mn_name)
+        a = row[1]
+        mx = 0
+        mn = 9999999
+        
+    else:
+        if (row[6]+row[7]) > mx:
+            mx = (row[6]+row[7])
+            mx_name = '버스노선 : ' + row[1] + '  정류장 : '+ row[5]+ '    승하차 수 : ' +str(mx) 
+        if (row[6]+row[7]) < mn:
+            mn = (row[6]+row[7])
+            mn_name = '버스노선 : ' + row[1] + '  정류장 : '+ row[5]+ '    승하차 수 : ' +str(mn) 
+print(mx_name)
+print(mn_name)
