@@ -1,0 +1,7 @@
+1.man woman 구분
+
+padding 'SAME' 패딩 시 크기가 줄어들지 않게 하기위해 확장하는것
+
+strides 필터가 이동하는 간격
+
+2.CCTV 정보 분석
